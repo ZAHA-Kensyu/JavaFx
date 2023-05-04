@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stonepickinggame.StoneController">
+   <children>
+   <Pane fx:id="circlePane" layoutX="14.0" layoutY="80.0" prefHeight="66.0" prefWidth="324.0">
+   </Pane>
+      <TextField fx:id="turnText" editable="false" layoutX="210.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" />
+
+
+      <TextField fx:id="removeStoneNum" layoutX="65.0" layoutY="260.0" />
+      <Label layoutX="96.0" layoutY="229.0" text="石を削除する個数" />
+      <Button fx:id="removeButton" layoutX="120.0" layoutY="294.0" mnemonicParsing="false" onAction="#Remove" text="削除" />
+      <Label fx:id="removeLabel" layoutX="226.0" />
+
+      <Label fx:id="errorRemoveLabel" layoutX="220.0" layoutY="230.0" opacity="0.0" textFill="RED" />
+
+      <Pane>
+         <TextArea fx:id="startBackgroundText" prefHeight="360.0" prefWidth="600.0" />
+         <Button fx:id="startButton" layoutX="210.0" layoutY="157.0" mnemonicParsing="false" onAction="#GameInit" prefHeight="40.0" prefWidth="200.0" text="ゲーム開始" />
+      </Pane>
+
+      <Pane fx:id="victoryOrDefeatPane">
+         <children>
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>

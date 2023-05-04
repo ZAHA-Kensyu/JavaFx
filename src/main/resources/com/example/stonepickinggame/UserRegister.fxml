@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stonepickinggame.UserRegisterController">
+    <Label layoutX="214.0" layoutY="36.0" prefHeight="50.0" prefWidth="198.0" text="プレイヤー登録を行います。" textAlignment="CENTER">
+      <font>
+         <Font size="16.0" />
+      </font>
+    </Label>
+    <TextField fx:id="userName" layoutX="214.0" layoutY="79.0" prefHeight="26.0" prefWidth="171.0" />
+<!--    <TextField fx:id="stoneMax" layoutX="214.0" layoutY="159.0" prefHeight="26.0" prefWidth="171.0" />-->
+
+    <Slider fx:id="stoneMaxSlider" layoutX="225.0" layoutY="165.0" max="100" min="10" showTickLabels="true" showTickMarks="true" value="10" />
+    <Label fx:id="maxRangeLabel" layoutX="280.0" layoutY="200.0" text="${stoneMaxSlider.value}"/>
+
+    <Slider fx:id="stoneGetSlider" layoutX="225.0" layoutY="250.0" max="10" min="1" showTickLabels="true" showTickMarks="true" value="1" />
+    <Label fx:id="getRangeLabel" layoutX="280.0" layoutY="280.0" text="${stoneGetSlider.value}"/>
+
+    <Button layoutX="253.0" layoutY="333.0" mnemonicParsing="false" onAction="#UserNameRegister" prefHeight="38.0" prefWidth="94.0" text="登録" />
+   <Label layoutX="214.0" layoutY="122.0" prefHeight="50.0" prefWidth="198.0" text="石を配置する数" textAlignment="CENTER">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="214.0" layoutY="200.0" prefHeight="50.0" prefWidth="198.0" text="消す石の数" textAlignment="CENTER">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+</AnchorPane>
